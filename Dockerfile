@@ -7,4 +7,7 @@ RUN bun install
 
 COPY . .
 
-CMD ["bun",  "src/index.ts"]
+ENV PORT=8080
+EXPOSE 8080
+
+CMD ["bun", "run", "src/index.ts"]
