@@ -1,0 +1,53 @@
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-image: url('/images/bg.jpg');
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+.vh100 {
+    min-height: 100vh;
+}
+
+.alphaDialog {
+    background-color: #ffffff8f;
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.logoImg {
+    position: relative;
+    width: 250px;
+    z-index: 5;
+}
+
+.btn-block {
+    width: 97% !important;
+}
+
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 992px) {
+    .logoImg {
+        position: relative;
+        width: 220px;
+        z-index: 5;
+    }
+    .alphaDialog{
+        width:300px;
+    }
+}
+
+
+@media (min-width: 1200px) {}
+
+
+@media (min-width: 1400px) {}
