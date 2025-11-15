@@ -13,8 +13,6 @@ const webSocket = new Elysia()
 
         message(ws, msg) {
             console.log("Received from client:", msg);
-
-            // ส่งกลับไปหาคลไคลเอนต์ที่ส่งมา
             ws.send(`Server got: ${msg}`);
         },
 

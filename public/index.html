@@ -16,6 +16,7 @@
 
 <body>
   <h1>ฮัลโหล World Bootstrap 4.6</h1>
+  <button class="btn btn-primary" id="sendBtn">Send Data</button>
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
@@ -29,7 +30,9 @@
     $(async function () {
       let webSocket = new Socket();
       await webSocket.createConnection();
-      webSocket.sendMessage("MEOW!");
+      $("#sendBtn").on("click",()=>{
+        webSocket.sendMessage("test");
+      })
     });
   </script>
 </body>
