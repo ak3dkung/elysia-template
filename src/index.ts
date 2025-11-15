@@ -1,9 +1,7 @@
 import { Elysia } from "elysia";
 import { staticPlugin } from "@elysiajs/static";
 import { userRoute } from "./routes/users";
-
-console.log("PORT DATA",process.env.PORT);
-console.log("PORT DATA BUN",Bun.env.PORT);
+import { webSocket } from "./routes/WebSocket";
 
 const port = Number(Bun.env.PORT || process.env.PORT || 3000);
 
@@ -16,8 +14,10 @@ app.use(staticPlugin({
 
 app.get("/", () => Bun.file("public/index.html"))
 app.use(userRoute);
+app.use(webSocket);
 
 app.listen(port);
+
 console.log(
   `🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}`
 );
