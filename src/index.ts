@@ -2,6 +2,9 @@ import { Elysia } from "elysia";
 import { staticPlugin } from "@elysiajs/static";
 import { userRoute } from "./routes/users";
 
+console.log("PORT DATA",process.env.PORT);
+console.log("PORT DATA BUN",Bun.env.PORT);
+
 const port = Number(Bun.env.PORT || process.env.PORT || 3000);
 
 const app = new Elysia()
