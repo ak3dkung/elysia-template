@@ -14,6 +14,7 @@ app.use(staticPlugin({
 
 app.get("/", () => Bun.file("public/index.html"))
 app.get("/video", () => Bun.file("public/video.html"))
+app.get("/tailwind", () => Bun.file("public/tailwind.html"))
 app.use(userRoute);
 app.use(webSocket);
 

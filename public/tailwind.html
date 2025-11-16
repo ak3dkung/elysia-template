@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="fixed top-0 z-50 w-full border-b bg-white">
+        <div class="px-4 py-3 flex items-center justify-between">
+            <!-- Sidebar toggle btn (mobile) -->
+            <button data-drawer-target="sidebar" data-drawer-toggle="sidebar"
+                class="inline-flex items-center p-2 text-gray-500 rounded-lg lg:hidden hover:bg-gray-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <span class="text-xl font-semibold">My Dashboard</span>
+
+            <div class="flex items-center gap-3">
+                <span class="text-gray-500">User</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside id="sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen pt-16 transition-transform -translate-x-full bg-white border-r lg:translate-x-0">
+        <div class="h-full px-4 py-6 overflow-y-auto">
+            <ul class="space-y-3">
+                <li>
+                    <a href="#" class="flex items-center p-2 text-gray-700 bg-gray-100 rounded-lg">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        Analytics
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <div class="p-4 lg:ml-64 pt-20">
+        <div class="p-4 bg-white rounded-lg shadow">
+            <h1 class="text-2xl font-semibold mb-4">Welcome</h1>
+            <p class="text-gray-600">
+                นี่คือตัวอย่าง Layout ของ Flowbite ที่จัดโครงสร้างให้เรียบร้อยแล้ว  
+                เอาไปต่อยอดได้ทันที
+            </p>
+        </div>
+
+        <!-- More content -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 mt-4">
+            <div>Card 1</div>
+            <div>Card 2</div>
+            <div>Card 3</div>
+            <div>Card 4</div>
+            <div>Card 5</div>
+            <div>Card 1</div>
+            <div>Card 2</div>
+            <div>Card 3</div>
+            <div>Card 4</div>
+            <div>Card 5</div>
+        </div>
+    </div>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+</html>
